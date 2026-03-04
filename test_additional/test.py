@@ -1,7 +1,7 @@
 import sys
 sys.path.append("../src")
-from math_demo import add
-from math_demo import test_bug_additional
+from math_demo import add , add_with_bug , add_something,calculate_tax
+
 
 def test_addition():
     assert add(2,2)==4
@@ -30,9 +30,15 @@ def test_add_something():
     add_something(6,3) ==9
     add_something(None,None)==0
     add_something(None,"hi")==0
+    add_something(10,None)==0
+    add_something("1kl",10)==0
+
 
 if __name__ == "__main__":
     test()
     test_bug_additional()
     test_addition_dublicate_logic()
+    test_addition_enought()
+    test_addition_overcompilate()
+    test_add_something()
     
