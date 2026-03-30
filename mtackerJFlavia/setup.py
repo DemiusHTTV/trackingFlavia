@@ -1,13 +1,18 @@
+from pathlib import Path
 from setuptools import setup
+
+ROOT = Path(__file__).resolve().parent
+README_PATH = (ROOT / ".." / "README.md").resolve()
+long_description = README_PATH.read_text(encoding="utf-8") if README_PATH.exists() else ""
 
 setup(
     name='mtracker_jflavia',
     version='0.1',
     packages=['mtracker_jflavia'],
-     long_description=open("README.md").read(),
+    long_description=long_description,
     long_description_content_type="text/markdown",
-     license='MIT',
-     license_files=("LICENSE",).
+    license='MIT',
+    license_files=("LICENSE",),
     install_requires=[
         'pytest',
     ],
