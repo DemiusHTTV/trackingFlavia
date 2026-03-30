@@ -19,5 +19,5 @@ setup(
     description='A package for tracking memory usage of the Josephus problem implementation.',
     author='Dmitry Trubachev',  
     author_email='babygreenyoda@yandex.ru',
-    url='https://github.com/DemiusHTTV/culture_of_develop_trubachev/tree/main/mtackerJFlavia',
+    url='https://github.com/DemiusHTTV/trackingFlavia',
 )
