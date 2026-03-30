@@ -2,12 +2,12 @@ from pathlib import Path
 from setuptools import setup
 
 ROOT = Path(__file__).resolve().parent
-README_PATH = (ROOT / ".." / "README.md").resolve()
+README_PATH = ROOT / "README.md"
 long_description = README_PATH.read_text(encoding="utf-8") if README_PATH.exists() else ""
 
 setup(
     name='mtracker_jflavia',
-    version='0.1.1',
+    version='0.1.2',
     packages=['mtracker_jflavia'],
     long_description=long_description,
     long_description_content_type="text/markdown",
