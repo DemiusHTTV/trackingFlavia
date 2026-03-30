@@ -7,7 +7,7 @@ long_description = README_PATH.read_text(encoding="utf-8") if README_PATH.exists
 
 setup(
     name='mtracker_jflavia',
-    version='0.1',
+    version='0.1.1',
     packages=['mtracker_jflavia'],
     long_description=long_description,
     long_description_content_type="text/markdown",
